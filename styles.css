@@ -24,8 +24,13 @@ body{
 	width: 200px;
 	height: 100%;
 	/* background: #4b4276; */
-	background:rgba(10, 10, 10, 1) ;
+	/* background:rgba(0, 0, 0, 0.5) ; */
 	padding: 30px; 
+	/* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+				  url("Navbar.jpg"); */
+	background-image: linear-gradient(rgba(43, 43, 58, 0.5), rgba(77, 77, 53, 0.5)),              
+	              url("Navbar.jpg");
+	/* background-image: url('Navbar.jpg'); */
 }
 
 .wrapper .sidebar h2{
@@ -37,9 +42,10 @@ body{
 
 .wrapper .sidebar ul li{
 	padding: 15px;
+	cursor: pointer;
 	/* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
-	border-top: 1px solid rgba(225,225,225, 0.5);
-	border-bottom: 1px solid rgba(225,225,225, 0.5);
+	/* border-top: 1px solid rgba(225,225,225, 0.5);
+	border-bottom: 1px solid rgba(225,225,225, 0.5); */
 }
 
 .wrapper .sidebar ul li a{
@@ -52,7 +58,7 @@ body{
 }
 
 .wrapper .sidebar ul li:hover {
-	background: #242329;
+	background: #5f5d6d;
 }
 
 .wrapper .sidebar ul li:hover a{
@@ -95,8 +101,8 @@ body{
 }
 
 .wrapper .main_content .info {
-	margin: 20px;
-	color: #717171;
+	margin: 40px;
+	/* color: #717171; */
 	line-height: 25px;
 }
 
@@ -106,3 +112,26 @@ body{
 
 
 
+.sidebar ul ul {
+	transition: all 0.3s;
+	opacity: 0;
+	position: absolute;
+	/* border-left: 3px solid #ca2828; */
+	/* border-right: 3px solid #412424; */
+	visibility: hidden;
+	width: max-content;
+	left: 102%;
+	top: 22%;
+}
+.sidebar ul li:hover > ul{
+	opacity: 1;
+	visibility: visible;
+	background: #19181d;
+	/* background: #fff; */
+
+}
+
+/* .add:hover{
+	color: #fff;
+
+} */
