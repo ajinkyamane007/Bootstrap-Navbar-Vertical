@@ -21,7 +21,7 @@ body{
 
 .wrapper .sidebar{
 	position: fixed;
-	width: 225px;
+	width: 250px;
 	height: 100%;
 	/* background: #4b4276; */
 	/* background:rgba(0, 0, 0, 0.5) ; */
@@ -84,6 +84,7 @@ body{
 	margin: 0 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
+	margin-bottom: 15%;
 }
 
 .main_content{
@@ -101,7 +102,9 @@ body{
 }
 
 .wrapper .main_content .info {
-	margin: 40px;
+	margin-left: 85px;
+	margin-top: 45px;
+	margin-right: 45px;
 	/* color: #717171; */
 	line-height: 25px;
 }
@@ -131,7 +134,7 @@ body{
 
 }
 
-/* .add:hover{
-	color: #fff;
-
-} */
+.card-img-top{
+	height: 400px;
+	width: 250px;
+}
